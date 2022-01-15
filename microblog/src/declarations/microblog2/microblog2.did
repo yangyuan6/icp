@@ -1,0 +1,8 @@
+type Message = text;
+service : {
+  follow: (principal) -> ();
+  follows: () -> (vec principal) query;
+  post: (text) -> ();
+  posts: () -> (vec Message) query;
+  timeline: () -> (vec Message);
+}
