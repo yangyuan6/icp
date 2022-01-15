@@ -24,7 +24,6 @@ actor {
     };
     stable var messages : List.List<Message> = List.nil();
     public shared(msg) func post(text: Text) : async (){
-        assert(Principal.toText(msg.caller) == "awqv6-k6gqx-jeddu-sjrgg-ssa3b-htbjy-ixfoe-76yro-sjn7n-zh3i4-aae");
         var blog = {
             message = text;
             time = Time.now();
