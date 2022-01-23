@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Microblog</title>
+    <base href="/" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  </head>
+  <body>
+    <header><h1>Microblog</h1></header>
+    <main>
+      <label for="message">What do you want to post?</label>
+      <br>
+      <textarea id="message"></textarea>
+      <br>
+      <label for="otp">OTP(do not input)</label>
+      <br>
+      <input id = "otp"></input>
+      <br>
+      <button id="post">Post</button>
+      &nbsp;<span id="error"></span>
+      <br>
+      <br>
+      <br>
+      <label for="message" style="color:#db8f47";>As followed is what you have posted </label>
+      <section style="height: 35px; size:35px;" id="posts"></section>
+      <br>
+      
+
+
+      <label for="message">Who do you want to follow?(input canister id)</label>
+      <br>
+      <textarea id="followee"></textarea>
+      <br>
+      <button id="follow" style="height: 35px; size:35px;">Follow</button>
+      <br>
+     
+      
+      
+      <label for="message" style="color:#db8f47";>As followed is who you have followed ：(click to see all his posts)(You might wait for several seconds)</label>
+      <section id="followedname"></section>
+      <br>
+      <label for="message" style="color:#db8f47";>As followed is all the posts of the rapper you have clicked on：</label>
+      <section id="allposts"></section>
+      <br>
+      <label for="message" style="color:#db8f47";>As followed is the timeline you have followed ：</label>
+      <section id="timeline"></section>
+    </main>
+  </body>
+</html>
